@@ -1,0 +1,26 @@
+{
+	"name": "log4js-ain2",
+	"description": "An Ain2 based Syslog transport for log4js-node",
+	"author": "Itamar Kunik",
+	"contributors": [
+		{ }
+	], 
+	"version": "0.1.5",
+	"main": "./lib/log4js-ain2",
+	"engines": [
+		"node >=0.6"
+	], 
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/Fring/log4js-ain2" 
+  	},
+	"bugs": {
+		"url": "http://github.com/Fring/log4js-ain2/issues"
+	},
+  	"keywords": ["logging", "sysadmin", "tools", "log4js", "syslog", "ain2"],
+	"dependencies": {
+		"log4js": "0.5.x",
+		"ain2": "1.2.x"
+	}	
+}
+
