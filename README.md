@@ -13,17 +13,20 @@ An [Ain2][1] based Syslog transport for [log4js-node][0].
 To use this Syslog transport in [log4js-node][0], you simply need to 'npm install' it and add it as an appender
 
 Configuration file example: 
-	{
-		"appenders": [
-			{
-				type: 'log4js-ain2', 
-				tag: 'SYSLOG_TAG', 
-				facility: 'daemon', 
-				hostname: 'SYSLOG_SERVER', 
-				port: SYSLOG_PORT
-			}
-		]
-	} 
+``` json  
+
+{
+	"appenders": [
+		{
+			"type": "log4js-ain2", 
+			"tag": "SYSLOG_TAG", 
+			"facility": "daemon", 
+			"hostname": "SYSLOG_SERVER", 
+			"port": SYSLOG_PORT
+		}
+	]
+} 
+```  
 
 Code example:
 
@@ -55,12 +58,13 @@ logger.fatal('fatal - Cheese was breeding ground for listeria.');
 
 ```
 
- NOTE: Options are passed through to ain2
+ NOTE: Options are passed through to [Ain2][1]
 
 ## Log Levels
 
 This is the mapping from [log4js-node][0] levels to [ain2][1] levels
 
+``` 
 ALL -> debug
 TRACE -> debug
 DEBUG -> debug
@@ -68,6 +72,7 @@ INFO -> info
 WARN -> warn
 ERROR -> err
 FATAL -> crit
+```
 
 ## Syslog (ain2) Configuration
 
